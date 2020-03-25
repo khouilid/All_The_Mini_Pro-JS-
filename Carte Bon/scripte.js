@@ -13,62 +13,78 @@ let UiController = (function () {
             document.getElementById("face__2").style.display = "block";
         },
         First__input: function () {
-            let first__input = document.getElementById("first__input").value;
-            let  inputArry = first__input.split('');
-            for ( var i = 0 ; i < inputArry.length; i++){
-                if ( i <= 3 || i >= 12){
-                    document.getElementById("code_" + i).innerHTML = inputArry[i];
-                    if (inputArry[0] == 5 && inputArry[1] == 3 && inputArry[2] == 2 && inputArry[3] == 4){
-                       document.getElementById("logo").src = "images/mastercard.png";
-        
-                    }else if ( inputArry[0] == 3 && inputArry[1] == 4 && inputArry[2] == 3 && inputArry[3] == 4 ){
-                        document.getElementById("logo").src = "images/amex.png";
-                    }else{
-                        document.getElementById("logo").src = "images/visa.png";
+            let first__input = parseInt(document.getElementById("first__input").value);
+            let change = first__input.toString()
+            let inputArry = change.split('');
+            if (typeof first__input === "number") {
+                for (var i = 0; i < inputArry.length; i++) {
+                    if (i <= 3 || i >= 12) {
+                        document.getElementById("code_" + i).innerHTML = inputArry[i];
+                        if (inputArry[0] == 5 && inputArry[1] == 3 && inputArry[2] == 2 && inputArry[3] == 4) {
+                            document.getElementById("logo").src = "images/mastercard.png";
+
+                        } else if (inputArry[0] == 3 && inputArry[1] == 4 && inputArry[2] == 3 && inputArry[3] == 4) {
+                            document.getElementById("logo").src = "images/amex.png";
+                        } else {
+                            document.getElementById("logo").src = "images/visa.png";
+                        }
+                    } else {
+                        document.getElementById("code_" + i).innerHTML = "$";
                     }
-                }else{
-                    document.getElementById("code_" + i).innerHTML = "$";
-                }
-            };
+                };
+            } else if (typeof first__input === "string") {
+                alert("Please Enter a Number");
+                console.log("ljdgjshj")
+            }
+
         },
         id_input: function () {
             let ID = ID_input.value.toUpperCase();
             document.getElementById("ID_Cart").innerHTML = ID;
+            if ( ID == ""){
+                document.getElementById("ID_Cart").innerHTML = "AD SOYAD";
+
+            }
         },
-        third_input: function(){
-            let text = input.value;
-            let texto = text.split('')
-            for ( var y = 0 ; y < texto.length; y++){
-                document.getElementById("span_" + y).innerHTML = "*";
+        third_input: function () {
+            let text = parseInt(input.value);
+            let change2 = text.toString();
+            let texto = change2.split('')
+            if (typeof text === "number") {
+                for (var y = 0; y < texto.length; y++) {
+                    document.getElementById("span_" + y).innerHTML = "*";
+                }
+            } else if (typeof text === "string") {
+                alert("Please Enter a Number")
             }
         },
     }
 })();
 //for the rotation carte
 input.addEventListener("focus", function () {
-  UiController.retationControl();
+    UiController.retationControl();
 })
-input.addEventListener("input", function (){
+input.addEventListener("input", function () {
     UiController.third_input();
 });
 // for the big code 
 first__input.addEventListener("input", function () {
     UiController.First__input();
- })      
+})
 // the user name 
 ID_input.addEventListener("input", function () {
     UiController.id_input();
 })
 // date of the finish
-years.addEventListener("click", function(e) {
-        let target = e.target;
-        if (target.matches("option")){
-            date_years.innerHTML = this.value;
-        }
- });
-Month.addEventListener("click", function(e) {
+years.addEventListener("click", function (e) {
     let target = e.target;
-    if (target.matches("option")){
+    if (target.matches("option")) {
+        date_years.innerHTML = this.value;
+    }
+});
+Month.addEventListener("click", function (e) {
+    let target = e.target;
+    if (target.matches("option")) {
         date_day.innerHTML = this.value;
     }
-}); 
+});

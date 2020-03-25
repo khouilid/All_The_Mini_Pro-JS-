@@ -57,11 +57,11 @@
             <p id="paragraph">Card Number</p>
             <div>
               
-                <input class="input" id="first__input" type="text">
+                <input class="input" id="first__input" maxlength = "16" type="text">
             </div>
             <div>
                 <p class="paragraph">Card Name</p>
-                <input class="input" id="ID_input" type="text">
+                <input class="input" id="ID_input" maxlength = "25" type="text">
             </div>
             <p class="paragraph">Expiration Date</p>
             <div class="date_cvv">
@@ -70,6 +70,7 @@
                 <div>
                     
                     <select class="Date" name="" id="years">
+                        <option value="0" >Years</option>
                         <option value="20">2020</option>
                         <option value="21">2021</option>
                         <option value="22">2022</option>
@@ -80,6 +81,7 @@
                 </div>
                 <div>
                     <select class="Date" name="" id="months">
+                        <option value="0" >Month</option>
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
@@ -95,7 +97,7 @@
                     </select>
                 </div>
                 <div>
-                    <input class="Date" id="CVV" type="text">
+                    <input class="Date" id="CVV" maxlength = "4" type="text">
                 </div>
 
             </div>
