@@ -1,0 +1,121 @@
+body{
+    font-family: 'Baloo 2', cursive;
+    background-color: #32b3e6d7;
+}
+.container{
+    width: 450px;
+    /* height: 450px; */
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    top: 150px;
+    left: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.582);
+}
+.container_2{
+    margin-top: -100px;
+}
+.Carte{
+   background-image: url("../images/13.jpeg");
+    width: 350px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    left: 40px;
+    top: -120px;
+    position: relative;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.836);
+    
+}
+.anime{
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+.anime2{
+    transform: rotateY(360deg);
+    transition: 0.5s;
+}
+.carte__img, .carte__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carte__img div img { 
+    width: 70px;
+}
+.carte__code{
+    text-align: center;
+    align-items: center;
+   
+}
+.color{
+    color: white;
+    
+}
+.space{
+    margin-TOP: -23px;
+}
+/* .space2{
+    margin-top: -10px;
+} */
+.black{
+    height: 20px;
+}
+.black{
+    height:50px;
+    background-color: black;
+}
+.white{
+    height: 24px;
+    background-color: white;
+    border-radius: 6px;
+    margin-top: -15px;
+    padding:10px;
+}
+.white h1{
+    height: 20px;
+    margin: -5px 0;
+}
+.discover{
+    width: 120px;
+    float: inline-end;
+    margin-top: 10px;
+}
+/* inputs */
+
+.input{
+    width: 420px;
+    height: 35px;
+    padding-left: 20px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 600;
+    margin-top: -50px;
+}
+.date_cvv{
+    display: flex;
+    justify-content: space-between;
+}
+.input, .Date , .btn button{
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+.Date{
+    width: 130px;
+    height: 35px;
+    padding-left: 10px;
+    font-family: 'Baloo 2', cursive;
+}
+.paragraph, #paragraph{
+    margin-bottom: 4px;
+}
+.btn button{
+    width: 450px;
+    height: 45px;
+    background-color: royalblue;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+    margin-top: 20px;
+    border: 0;
+    font-size: medium;
+}

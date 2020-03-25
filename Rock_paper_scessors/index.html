@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_paper_scessors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div>You PICKED</div> -->
+        <div class="header">
+            <div>
+                <img src="images/logo.svg" alt="logo">
+            </div>
+            <div>
+                <h1 id="para_ROCK" style="display: none; color: green;">YOU PECK ROCK</h1>
+                <h1 id="para_PAPER" style="display: none; color: rgba(255, 0, 0, 0.808);">YOU PECK PAPER</h1>
+                <h1 id="para_SCAISSORS" style="display: none; color: rgb(238, 255, 0);">YOU PECK SCAISSORS</h1>
+            </div>
+            <div class="header__score">
+                <p>Score</p>
+                <h1 id="SCORE">0</h1>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="main__img main__img_1" id="PAPER">
+                <img src="images/icon-paper.svg" id="papers" alt="paper">
+            </div>
+            <div class="main__str" id="btn" style="display: none;">
+                <h1 id="text">You Lose</h1>
+                <button id="btn_1">PLAY AGAIN</button>
+            </div>
+            <div class="main__img main__img_2" id="ROCK">
+                <img src="images/icon-rock.svg" id="rocks" alt="rock">
+            </div>
+        </div>
+        <div class="main__img main__img_3 main__img_3_1" id="SCAISSORS">
+
+            <img src="images/icon-scissors.svg" alt="rock">
+        </div>
+        <!-- <div>TE HOUSE PICKED</div> -->
+
+    </div>
+    <div>
+        <h2 class="sin">A.KHOUILID</h2>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

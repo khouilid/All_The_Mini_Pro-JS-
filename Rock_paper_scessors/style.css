@@ -1,0 +1,121 @@
+* {
+    background-color: #09234d;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+
+
+}
+
+.header {
+    max-width: 800px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.header__score {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header__score p,
+.header__score h1 {
+    background-color: white;
+
+}
+
+.header__score p {
+    font-weight: bold;
+}
+
+.header__score h1 {
+    margin-top: -10px;
+}
+
+/* the game */
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 30px;
+    margin: auto;
+    width: 80%;
+    height: 250px;
+}
+
+.main__img {
+    background-color: white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main__img img {
+    background-color: white;
+    height: 100px;
+
+}
+
+.main__img_1 {
+    border: 25px solid rgba(255, 0, 0, 0.808);
+    box-shadow: -3px 4px 0 3px rgb(231, 96, 96);
+}
+
+.main__img_2 {
+    border: 25px solid green;
+    box-shadow: -3px 4px 0 3px rgba(22, 126, 22, 0.705);
+}
+
+.main__img_3 {
+    border: 25px solid rgb(238, 255, 0);
+    box-shadow: -3px 4px 0 3px rgba(238, 255, 0, 0.63);
+
+
+}
+
+.main__img_3_1 {
+    margin: auto;
+}
+
+.main__str button {
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    color: #09234d;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+
+}
+
+.main__str button:hover {
+    color: rgb(255, 7, 7);
+}
+
+.main__str h1 {
+    color: white;
+    text-align: center;
+
+}
+.sin{
+    color: white;
+    bottom:25px;
+    border-bottom: 4px solid white;
+    width: 140px;
+    position: fixed;
+}

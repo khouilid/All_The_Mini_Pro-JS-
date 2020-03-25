@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte B</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- the Carte bonkair  -->
+        <div class="Carte" id="carte">
+            <div id="face__1">
+                <div class="carte__img">
+                    <div>
+                        <img src="images/chip.png" alt="chip">
+                    </div>
+                    <div class="black"></div>
+                    <div>
+                        <img id="logo" src="images/visa.png" alt="visa">
+                    </div>
+                </div>
+                <div id="Code" class="carte__code color">
+                    <h2 ><span id="code_0">#</span><span id="code_1">#</span><span id="code_2">#</span><span id="code_3">#</span>       <span id="code_4">#</span><span id="code_5">#</span><span id="code_6">#</span><span id="code_7">#</span>       <span id="code_8">#</span><span id="code_9">#</span><span id="code_10">#</span><span id="code_11">#</span>       <span id="code_12">#</span><span id="code_13">#</span><span id="code_14">#</span><span id="code_15">#</span></h2>
+                </div>
+                <div class="carte__info">
+                    <div class="space2">
+                        <h6 class="color">Card Holder</h6>
+                        <h4 class="color space" id="ID_Cart">AD SOYAD</h4>
+                    </div>
+                    <div class="space2">
+                        <h6 class="color">Expises</h6>
+                        <h5 class="color space"><span id="date_years">MM</span>/<span id="date_day">YY</span></h5>
+                    </div>
+                </div>
+            </div>
+            <div id="face__2" style="display: none; transform: rotateY(180deg);">
+                <div class="black">
+
+                </div>
+                <h4 class="color">CVV</h4>
+                <div  id="cvv" class="white">
+                    <h1><span id="span_0"></span><span id="span_1"></span><span id="span_2"></span><span id="span_3"></span></h1>
+                </div>
+                <img class="discover" src="images/discover.png" alt="">
+
+
+            </div>
+
+
+        </div>
+        <!-- input items  -->
+        <div class="container_2">
+            <p id="paragraph">Card Number</p>
+            <div>
+              
+                <input class="input" id="first__input" type="text">
+            </div>
+            <div>
+                <p class="paragraph">Card Name</p>
+                <input class="input" id="ID_input" type="text">
+            </div>
+            <p class="paragraph">Expiration Date</p>
+            <div class="date_cvv">
+
+
+                <div>
+                    
+                    <select class="Date" name="" id="years">
+                        <option value="20">2020</option>
+                        <option value="21">2021</option>
+                        <option value="22">2022</option>
+                        <option value="23">2023</option>
+                        <option value="24">2024</option>
+                        <option value="25">2025</option>
+                    </select>
+                </div>
+                <div>
+                    <select class="Date" name="" id="months">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div>
+                    <input class="Date" id="CVV" type="text">
+                </div>
+
+            </div>
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripte.js"></script>
+</body>
+
+</html>
